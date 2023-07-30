@@ -1,5 +1,6 @@
 import React from 'react'
 import './Checkout.css'
+import Subtotal from './Subtotal'
 function Checkout() {
   return (
     <div className='checkout'>
@@ -12,7 +13,7 @@ com/images/G/02/UK_CCMP/TM/OCC_Amazon1._CB423492668.jpg' alt=''/>
             </div>
         </div>
         <div className='checkout_right'>
-                <h2>The subtotal will go there</h2>
+                <Subtotal/>
         </div>
     </div>
   )
