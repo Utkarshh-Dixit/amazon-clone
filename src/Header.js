@@ -17,6 +17,7 @@ function Header() {
             <SearchIcon className='header_searchIcon'/>
          </div>
          <div className='header_nav'>
+            <Link to='/loginPage'>
             <div className='header_option'>
                 <span className='header_optionOne'>
                    Hello User 
@@ -25,6 +26,7 @@ function Header() {
                     Sign in
                 </span>
             </div>
+            </Link>
             <div className='header_option'>
                 <span className='header_optionOne'>
                    Returns 
