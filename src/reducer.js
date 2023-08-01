@@ -31,6 +31,13 @@ const reducer = (state, action) => {
                 ...state,
                 basket: newbasket
             }
+
+            case 'SET_USER':
+                return{
+                    ...state,
+                    user: action.user
+                }
+
             default:
                 return state;
     }
