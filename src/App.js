@@ -8,10 +8,11 @@ import LoginPage from './LoginPage';
 import React, { useEffect } from 'react';
 import { auth } from './Firebase';
 import { useStateValue } from './StateProvider';
+import Payment from './Payment';
 
 function App() {
-
-  const [{}, dispatch] = useStateValue();
+//eslint-disable-next-line
+  const [{basket}, dispatch] = useStateValue();
 
   useEffect(() =>{
       
@@ -30,6 +31,7 @@ function App() {
          })
       }
     })
+    //eslint-disable-next-line
   }, [])
 
   return (
@@ -39,6 +41,7 @@ function App() {
       <Routes>
         <Route path='/loginPage' element={<LoginPage/>}></Route>
         <Route path='/' element={<> <Header/><Home/></>}></Route>
+        <Route path='/payment' element={<> <Header/><Payment/></>}></Route>
         <Route path='/checkout' element={<><Header/><Checkout/></>}></Route>
       {/* <Header/> */}
       {/* <Home/> */}
