@@ -1,0 +1,8 @@
+{
+  "appId": "com.amazonUtkarsh.app",
+  "appName": "amazon-clone",
+  "webDir": "build",
+  "server": {
+    "androidScheme": "https"
+  }
+}
