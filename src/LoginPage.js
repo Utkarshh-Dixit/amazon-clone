@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import './LoginPage.css'
-import { auth } from './Firebase'
+import { auth } from './firebase'
 
 function LoginPage() {
 

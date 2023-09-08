@@ -6,7 +6,7 @@ import Home from './Home';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import LoginPage from './LoginPage';
 import React, { useEffect } from 'react';
-import { auth } from './Firebase';
+import { auth } from './firebase';
 import { useStateValue } from './StateProvider';
 import Payment from './Payment';
 import { loadStripe } from '@stripe/stripe-js';

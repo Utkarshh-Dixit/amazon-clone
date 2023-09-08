@@ -4,7 +4,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
-import { auth } from './Firebase';
+import { auth } from './firebase';
 
 function Header() {
     const[{basket, user}, dispatch] = useStateValue();
